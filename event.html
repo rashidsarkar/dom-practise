@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <br />
+    <br />
+    <p id="input_display">Input Text</p>
+    <input id="input_fild" type="text" />
+    <button id="btn_update">Update</button>
+    <br />
+    <br />
+    <h3 id="handere">Lorem ipsuns cvoluptatum.</h3>
+    <p id="paka">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <button onclick="handelOnClick()">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </button>
+    <button id="bat">Button 2</button>
+    <script>
+      const handelOnClick = () => {
+        const handlerStatus = document.getElementById("handere");
+        handlerStatus.innerText = "Lorem by handerl starter";
+      };
+      document.getElementById("bat").addEventListener("click", function () {
+        const pakaa = document.getElementById("paka");
+        pakaa.innerText = "update nt btn2";
+      });
+    </script>
+    <script src="js/event.js"></script>
+  </body>
+</html>
